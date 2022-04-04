@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DestinationsController!{% endblock %}
+
+{% block body %}
+<h1>Show all</h1>
+{% for destination in destinations %}
+    <p>{{destination.id}}</p>
+    <p>{{destination.name}}</p>
+    <p>{{destination.price}}</p>
+    <p>{{destination.description}}</p>
+    <p>{{destination.picture}}</p>
+    <img src="{{ asset( 'assets/pictures/' ~ destination.picture) }}" alt="{{destination.name}}"/>
+    <hr>
+{% else %}
+    
+{% endfor %}
+
+{% endblock %}

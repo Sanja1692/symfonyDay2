@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{#{% block stylesheets %}<link rel="stylesheet" href={{ asset('assets/style/custom.css')}}{% endblock %}#}
+
+{% block title %}Hello TestController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Hello {{ controller_name }}! ✅</h1>
+    <p><i>Hello developers</i></p>
+    <div class = "div">
+    <img src="{{asset('assets/pictures/programmer.jpg')}}" alt="">
+    </div>
+
+</div>
+{% endblock %}
